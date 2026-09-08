@@ -608,6 +608,14 @@ namespace Hmu_HW5103 {
     ign: IGN;
   }
 
+  /** current electrical power consumption */
+  @inherit(r_7)
+  @ext(0x5b, 0x0d)
+  model RunDataElectricPowerConsumption {
+    @unit("W")
+    value: EXP;
+  }
+
   @inherit(r_7)
   @ext(0xd, 0xa)
   model RunDataCompressorSpeed {
