@@ -294,6 +294,13 @@ namespace Hmu_HW5103 {
     value: percent;
   }
 
+  /** air intake temperature */
+  @inherit(r_2)
+  @ext(0x26)
+  model AirIntakeTemp {
+    value: temp;
+  }
+
   @inherit(r_2)
   @ext(0x2A)
   model YieldCoolingMonth {
@@ -681,6 +688,12 @@ namespace Hmu_HW5103 {
   @inherit(r_7)
   @ext(0xb9, 0xb)
   model RunStatsHcHours {
+    value: hoursum2;
+  }
+
+  @inherit(r_7)
+  @ext(0xbb, 0xb)
+  model RunStatsCoolHours {
     value: hoursum2;
   }
 
