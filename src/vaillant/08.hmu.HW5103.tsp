@@ -482,8 +482,9 @@ namespace Hmu_HW5103 {
   @inherit(r_3, wi_1)
   @ext(0x34, 0x1e)
   model CompStartHeatingFrom {
-    @minValue(-999)
-    @maxValue(9)
+    @minValue(-100)
+    @maxValue(-30)
+    @step(5)
     value: integral;
   }
 
@@ -491,8 +492,9 @@ namespace Hmu_HW5103 {
   @inherit(r_3, wi_1)
   @ext(0x34, 0x21)
   model CompStartCoolingFrom {
-    @minValue(0)
-    @maxValue(999)
+    @minValue(30)
+    @maxValue(100)
+    @step(5)
     value: integral;
   }
 
@@ -588,7 +590,6 @@ namespace Hmu_HW5103 {
   @ext(0x34, 0x28)
   @Ebus.example("40%", "3108b51a0405ff3428", "0aff021b280028003c0001")
   model NoiseReductionLevel {
-    @minValue(40)
     @maxValue(60)
     value: percent2;
   }
