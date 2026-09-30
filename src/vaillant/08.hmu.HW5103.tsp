@@ -373,6 +373,13 @@ namespace Hmu_HW5103 {
   model wi_1 {
   }
 
+  /** EEV step count */
+  @inherit(r_3)
+  @ext(0x34, 0x0d)
+  model EEVSteps {
+    value: UIN;
+  }
+
   /** heat curve 0.1 to 4.0 */
   @inherit(r_3, wi_1)
   @ext(0x35, 0x2d)
