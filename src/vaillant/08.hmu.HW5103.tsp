@@ -652,6 +652,17 @@ namespace Hmu_HW5103 {
     value: fanspeedv;
   }
 
+
+  /**
+   * effective HMU flow-temperature target;
+   * meaning inferred from observed operating behaviour
+   */
+  @inherit(r_7)
+  @ext(0x4a, 0x0d)
+  model RunDataTargetFlowTemp {
+    value: tempv;
+  }
+
   @inherit(r_7)
   @ext(0x53, 0xd)
   model RunDataStatuscode {
