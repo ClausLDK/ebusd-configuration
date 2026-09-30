@@ -43,7 +43,7 @@ namespace Hcmode_HW5103_inc {
   @ext(0)
   model Status00 {
     /** supply temperature */
-    supplytemp: temp1;
+    supplytemp: temp;
 
     /** water pressure */
     @unit("bar")
