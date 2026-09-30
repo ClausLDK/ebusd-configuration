@@ -1,6 +1,6 @@
 import "@ebusd/ebus-typespec";
 import "./_templates.tsp";
-import "./hcmode_inc.tsp";
+import "./hcmode_hw5103_inc.tsp";
 import "./errors_inc.tsp";
 using Ebus;
 using Ebus.Num;
@@ -825,7 +825,7 @@ namespace Hmu_HW5103 {
 
   /** included parts */
   union _includes {
-    Hcmode_inc,
+    Hcmode_HW5103_inc,
     Errors_inc,
   }
 
