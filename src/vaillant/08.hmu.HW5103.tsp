@@ -2,6 +2,7 @@ import "@ebusd/ebus-typespec";
 import "./_templates.tsp";
 import "./hcmode_hw5103_inc.tsp";
 import "./errors_inc.tsp";
+import "./b516_inc.tsp";
 using Ebus;
 using Ebus.Num;
 using Ebus.Dtm;
@@ -827,6 +828,7 @@ namespace Hmu_HW5103 {
   union _includes {
     Hcmode_HW5103_inc,
     Errors_inc,
+    B516_inc,
   }
 
   enum Values_Domestic_hot_water_mod__eco_normal_balance_ {
