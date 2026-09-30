@@ -626,6 +626,14 @@ namespace Hmu_HW5103 {
     value: EXP;
   }
 
+  /** current thermal power output */
+  @inherit(r_7)
+  @ext(0x5e, 0x0d)
+  model RunDataHeatOutput {
+    @unit("W")
+    value: EXP;
+  }
+
   @inherit(r_7)
   @ext(0xd, 0xa)
   model RunDataCompressorSpeed {
