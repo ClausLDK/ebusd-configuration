@@ -33,6 +33,44 @@ namespace Hcmode_HW5103_inc {
   @base(MF, 0x11)
   model r_1 {}
 
+  /**
+   * HW5103 native status.
+   *
+   * Live-validated on SW0902 and SW0905. CompressorState is kept raw
+   * because not all observed state values have an unambiguous meaning.
+   */
+  @inherit(r_1)
+  @ext(0)
+  model Status00 {
+    /** supply temperature */
+    supplytemp: temp1;
+
+    /** water pressure */
+    @unit("bar")
+    @divisor(10)
+    waterpressure: UCH;
+
+    /** compressor modulation */
+    @unit("%")
+    compressormodulation: UCH;
+
+    /** compressor state machine status number */
+    compressorstate: UCH;
+
+    /** heating/system state */
+    heatingstate: UCH;
+
+    /** unknown status byte */
+    unknownstate: UCH;
+
+    /** defrost state */
+    defrost: UCH;
+
+    /** compressor power */
+    @unit("%")
+    compressorpower: UCH;
+  }
+
   /** default *uw */
   @write
   @passive
