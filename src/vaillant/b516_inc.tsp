@@ -98,87 +98,74 @@ namespace B516_inc {
     ign: IGN;
   }
 
-  @inherit(r)
-  @ext(1, 0, 0, 0)
+  @base(MF, 0x16, 0x10, 1, 0, 0, 0)
   model StatSolarEnergySum {
     value: energye;
   }
 
-  @inherit(r)
-  @ext(1, 0x03, 0, 0)
+  @base(MF, 0x16, 0x10, 1, 0x03, 0, 0)
   model StatSolarEnergySumHc {
     value: energye;
   }
 
-  @inherit(r)
-  @ext(1, 0x04, 0, 0)
+  @base(MF, 0x16, 0x10, 1, 0x04, 0, 0)
   model StatSolarEnergySumHwc {
     value: energye;
   }
 
-  @inherit(r)
-  @ext(0x02, 0, 0, 0)
+  @base(MF, 0x16, 0x10, 0x02, 0, 0, 0)
   model StatEnvironmentEnergySum {
     value: energye;
   }
 
-  @inherit(r)
-  @ext(0x02, 0x03, 0, 0)
+  @base(MF, 0x16, 0x10, 0x02, 0x03, 0, 0)
   model StatEnvironmentEnergySumHc {
     value: energye;
   }
 
-  @inherit(r)
-  @ext(0x02, 0x04, 0, 0)
+  @base(MF, 0x16, 0x10, 0x02, 0x04, 0, 0)
   model StatEnvironmentEnergySumHwc {
     value: energye;
   }
 
-  @inherit(r)
-  @ext(0x02, 0x05, 0, 0)
+  @base(MF, 0x16, 0x10, 0x02, 0x05, 0, 0)
   model StatEnvironmentEnergySumCool {
     value: energye;
   }
 
-  @inherit(r)
-  @ext(0x03, 0, 0, 0)
+  @base(MF, 0x16, 0x10, 0x03, 0, 0, 0)
   model StatElectricEnergySum {
     value: energye;
   }
 
-  @inherit(r)
-  @ext(0x03, 0x03, 0, 0)
+  @base(MF, 0x16, 0x10, 0x03, 0x03, 0, 0)
   model StatElectricEnergySumHc {
     value: energye;
   }
 
-  @inherit(r)
-  @ext(0x03, 0x04, 0, 0)
+  @base(MF, 0x16, 0x10, 0x03, 0x04, 0, 0)
   model StatElectricEnergySumHwc {
     value: energye;
   }
 
-  @inherit(r)
-  @ext(0x03, 0x05, 0, 0)
+  @base(MF, 0x16, 0x10, 0x03, 0x05, 0, 0)
   model StatElectricEnergySumCool {
     value: energye;
   }
 
-  @inherit(r)
-  @ext(0x04, 0, 0, 0)
+  @base(MF, 0x16, 0x10, 0x04, 0, 0, 0)
   model StatFuelSum {
     value: energye;
   }
 
-  @inherit(r)
-  @ext(0x04, 0x03, 0, 0)
+  @base(MF, 0x16, 0x10, 0x04, 0x03, 0, 0)
   model StatFuelSumHc {
     value: energye;
   }
 
-  @inherit(r)
-  @ext(0x04, 0x04, 0, 0)
+  @base(MF, 0x16, 0x10, 0x04, 0x04, 0, 0)
   model StatFuelSumHwc {
     value: energye;
   }
 }
+
