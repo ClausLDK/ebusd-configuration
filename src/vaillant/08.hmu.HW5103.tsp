@@ -633,6 +633,18 @@ namespace Hmu_HW5103 {
     value: EXP;
   }
 
+  /** building circuit flow */
+  @inherit(r_7)
+  @ext(0xba, 0x09)
+  model RunDataBuildingCircuitFlow {
+    @unit("L/h")
+    value: EXP;
+  }
+
+
+
+
+
   /** current thermal power output */
   @inherit(r_7)
   @ext(0x5e, 0x0d)

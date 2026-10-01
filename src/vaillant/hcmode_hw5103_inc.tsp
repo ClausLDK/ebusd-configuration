@@ -90,7 +90,7 @@ namespace Hcmode_HW5103_inc {
     hcmode: hcmode;
     flowtempdesired: temp1;
     hwctempdesired: temp1;
-    hwcflowtempdesired: temp0;
+    hwcflowtempdesired: temp1;
 
     @maxLength(1)
     ign: IGN;
