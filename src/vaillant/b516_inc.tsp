@@ -17,12 +17,10 @@ namespace B516_inc {
     // ign2: UIN;
     /** the energy source */
     @out
-    @values(Values_source)
     source: UCH;
 
     /** the energy usage */
     @out
-    @values(Values_usage)
     usage: UCH;
   }
 
